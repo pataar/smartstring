@@ -6,7 +6,7 @@ Either do
 SmartString::create("Sample String");
 ```
 Or 
-```
+```php
 new SmartString("Sample String");
 ```
 
