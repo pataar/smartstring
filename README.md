@@ -1,4 +1,4 @@
-smartstring
+SmartString
 ===========
 #####Creating a SmartString object
 Either do 
@@ -18,5 +18,6 @@ You could use:
 ```php
 $sampletext = "Sample String";
 
-echo SmartString::create($sampletext)->remove("String").trim();
+echo SmartString::create($sampletext)->remove("String")->trim();
+//which would echo "Sample"
 ```
