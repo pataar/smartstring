@@ -183,6 +183,15 @@ class SmartString {
 	}
 
 	/**
+	 * remove a part of the SmartString
+	 * @param string $string the string to remove
+	 * @return SmartString
+	 */
+	public function remove($string){
+		return $this->replace($string, "");
+	}
+
+	/**
 	 * return the length of the string
 	 * @return int the length
 	 */
