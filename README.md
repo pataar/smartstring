@@ -19,13 +19,21 @@ new SmartString("Sample String");
 #####Using a SmartString object
 After creating your SmartString, you can use several chainable methods to manipulate the string.
 
-For example; say you want to remove the word "String" of "Sample String"
-You could use:
+Some examples:
 ```php
 $sampletext = "Sample String";
 
 echo SmartString::create($sampletext)->remove("String")->trim();
 //which would echo "Sample"
+
+echo SmartString::create($sampletext)->prefix("A new")->normalize();
+//which would echo "a-new-sample-string"
+
+echo SmartString::create($sampletext)->toMd5WithSalt("Salting is good");
+//which would echo "560fbd0056c4354c5dd0de0580c8c523"
+
+echo SmartString::create($sampletext)->remove("String")->trim()->toLower()->prefix("String ");
+//which would echo "String sample"
 ```
 
 ###Functions
