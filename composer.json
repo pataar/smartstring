@@ -2,6 +2,7 @@
     "name": "pataar/smartstring",
     "description": "A class to manipulate a string with a better syntax.",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Pataar",
