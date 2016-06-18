@@ -183,6 +183,17 @@ class SmartString {
 	}
 
 	/**
+	 * replace all occurences of a string
+	 * @param $search
+	 * @param $replacement
+	 * @return $this
+	 */
+	public function replacePattern($replacePattern, $replacement){
+		$this->string = preg_replace($replacePattern, $replacement, $this->string);
+		return $this;
+	}
+
+	/**
 	 * remove a part of the SmartString
 	 * @param string $string the string to remove
 	 * @return SmartString
@@ -199,6 +210,13 @@ class SmartString {
 		return strlen($this->string);
 	}
 
+	/**
+	 * Normalizes the string so it can be used in URL's
+	 * @return int the length
+	 */
+	public function normalize(){
+		return $this->replacePattern('/[,.$%#@^&*()!@`~[|"]/', '')->replacePattern('/[ _]/', '-')->toLower();
+	}
 
 	function __toString() {
 		return $this->string;
