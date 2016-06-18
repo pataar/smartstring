@@ -1,0 +1,12 @@
+{
+    "name": "pataar/smartstring",
+    "description": "A class to manipulate a string with a better syntax.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pataar",
+            "email": "pietering1@gmail.com"
+        }
+    ],
+    "require": {}
+}
