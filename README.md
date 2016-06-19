@@ -26,7 +26,7 @@ $sampletext = "Sample String";
 echo \Pataar\SmartString::create($sampletext)->remove("String")->trim();
 //which would echo "Sample"
 
-echo \Pataar\SmartString::create($sampletext)->prefix("A new")->normalize();
+echo \Pataar\SmartString::create($sampletext)->prefix("A new ")->normalize();
 //which would echo "a-new-sample-string"
 
 echo \Pataar\SmartString::create($sampletext)->toMd5WithSalt("Salting is good");
