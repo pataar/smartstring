@@ -9,11 +9,11 @@ composer require pataar/smartstring
 #####Creating a SmartString object
 Either do 
 ```php
-SmartString::create("Sample String");
+\Pataar\SmartString::create("Sample String");
 ```
 Or 
 ```php
-new SmartString("Sample String");
+new \Pataar\SmartString("Sample String");
 ```
 
 #####Using a SmartString object
@@ -23,16 +23,16 @@ Some examples:
 ```php
 $sampletext = "Sample String";
 
-echo SmartString::create($sampletext)->remove("String")->trim();
+echo \Pataar\SmartString::create($sampletext)->remove("String")->trim();
 //which would echo "Sample"
 
-echo SmartString::create($sampletext)->prefix("A new")->normalize();
+echo \Pataar\SmartString::create($sampletext)->prefix("A new")->normalize();
 //which would echo "a-new-sample-string"
 
-echo SmartString::create($sampletext)->toMd5WithSalt("Salting is good");
+echo \Pataar\SmartString::create($sampletext)->toMd5WithSalt("Salting is good");
 //which would echo "560fbd0056c4354c5dd0de0580c8c523"
 
-echo SmartString::create($sampletext)->remove("String")->trim()->toLower()->prefix("String ");
+echo \Pataar\SmartString::create($sampletext)->remove("String")->trim()->toLower()->prefix("String ");
 //which would echo "String sample"
 ```
 

@@ -1,4 +1,5 @@
 <?php
+namespace Pataar;
 
 class SmartString {
 

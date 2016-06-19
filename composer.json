@@ -2,12 +2,15 @@
     "name": "pataar/smartstring",
     "description": "A class to manipulate a string with a better syntax.",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Pataar",
             "email": "pietering1@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {"Pataar\\": "src/"}
+    }
 }
