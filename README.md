@@ -36,8 +36,8 @@ echo \Pataar\SmartString::create($sampletext)->remove("String")->trim()->toLower
 //which would echo "String sample"
 ```
 
-###Functions
-####toUpper()
+### Functions
+#### toUpper()
 Creates an uppercase version of the string.
 
 ```php
