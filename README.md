@@ -1,12 +1,12 @@
 SmartString
 ===========
-###Installation
+### Installation
 Using Composer:
 ```sh
 composer require pataar/smartstring
 ```
-###Usage
-#####Creating a SmartString object
+### Usage
+##### Creating a SmartString object
 Either do 
 ```php
 \Pataar\SmartString::create("Sample String");
@@ -16,7 +16,7 @@ Or
 new \Pataar\SmartString("Sample String");
 ```
 
-#####Using a SmartString object
+##### Using a SmartString object
 After creating your SmartString, you can use several chainable methods to manipulate the string.
 
 Some examples:
@@ -43,111 +43,111 @@ Creates an uppercase version of the string.
 ```php
 $smartString->toUpper();
 ```
-####toLower()
+#### toLower()
 Creates an lowercase version of the string.
 
 ```php
 $smartString->toLower();
 ```
 
-####Trim()
+#### Trim()
 Trims the string. So removes any trailing whitespaces and spaces.
 
 ```php
 $smartString->trim();
 ```
-####printme()
+#### printme()
 Prints the string.
 
 ```php
 $smartString->printme();
 ```
-####indexOf($input)
+#### indexOf($input)
 Returns the index of a certain $input string.
 
 ```php
 $smartString->indexOf($input);
 ```
-####substring($start, $length)
+#### substring($start, $length)
 Creates a substring of an existing string.
 
 ```php
 $smartString->substring($start, $length);
 ```
-####toMd5()
+#### toMd5()
 Creates an MD5 hash of the string.
 
 ```php
 $smartString->toMd5();
 ```
-####toMd5WithSalt($salt)
+#### toMd5WithSalt($salt)
 Creates an salted MD5 hash of the string. Using both a prefix and suffix containing the given `$salt`.
 
 ```php
 $smartString->toMd5WithSalt($salt);
 ```
-####encodeB64() || decodeB64()
+#### encodeB64() || decodeB64()
 Encodes or decodes a B64 string.
 
 ```php
 $smartString->encodeB64();
 $smartString->decodeB64();
 ```
-####charAt($index)
+#### charAt($index)
 Tells you on which index a certain character is placed.
 ```php
 $smartString->charAt($index);
 ```
 
-####equals($string)
+#### equals($string)
 Returns when the $string matches the $smartString.
 ```php
 $smartString->equals($string);
 ```
 
-####prefix($prefix)
+#### prefix($prefix)
 Adds a $prefix to the string.
 ```php
 $smartString->prefix($prefix);
 ```
 
-####suffix($suffix)
+#### suffix($suffix)
 Adds a $suffix to the string.
 ```php
 $smartString->suffix($suffix);
 ```
 
-####concat($string)
+#### concat($string)
 Concats a string.
 ```php
 $smartString->concat($string);
 ```
 
-####replace($search, $replacement)
+#### replace($search, $replacement)
 Replace a string with an other string.
 ```php
 $smartString->replace($search, $replacement);
 ```
 
-####replacePattern($pattern, $replacement)
+#### replacePattern($pattern, $replacement)
 Replaces a pattern.
 ```php
 $smartString->replacePattern($pattern, $replacement);
 ```
 
-####remove($string)
+#### remove($string)
 Remove a string
 ```php
 $smartString->remove($string);
 ```
 
-####length()
+#### length()
 Returns the length of the string.
 ```php
 $smartString->length();
 ```
 
-####normalize()
+#### normalize()
 Normalizes the string. Making it URL/slug compatible.
 ```php
 $smartString->normalize();
